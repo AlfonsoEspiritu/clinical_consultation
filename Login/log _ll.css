@@ -16,7 +16,7 @@ body{
 	border-bottom: 1px solid #007bff;
 	box-shadow: none;
 	outline: 0;
-	background-color: #ffffff;
+	background-color: #ebebeb;
 }
 
 .sideline{
@@ -68,10 +68,6 @@ button{
 	transform: rotateY(0deg);
 }
 
-.inicio a{
-width: 100%;
-text-decoration: none;	
-}
 
 /*Icons*/
 .correct[data-item="sass"], .flipped[data-item="sass"]{
