@@ -1,5 +1,5 @@
 *{
-    font-family: "Arima Madurai", sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 nav{
@@ -13,6 +13,7 @@ nav{
     color: white;
     box-shadow: 1px 3px 4px #000000;
     align-items: center ;
+    font-size: large;
 }
 
 .navigation{
@@ -62,8 +63,8 @@ nav{
     visibility: hidden;
     opacity: 0;
     top: 40px;
-    background: #EEB78E;
-    color: white;
+    background: #e38d8d;
+    color: rgb(255, 255, 255);
     padding: 6px;
     font-size: 12px;
     outline: none;
