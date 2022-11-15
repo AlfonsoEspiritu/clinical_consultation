@@ -1,294 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/132fdfade2.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./Form/CSS/estilos.css">
+    <link rel="stylesheet" href="./Form/CSS/estilos2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./stylesheet.css">
-  <title>Vaccination</title>
 </head>
 <body>
-  <nav>
-    <div class="logo">
-      <h1>Vaccination</h1>
-    </div>
-    <div class="nav-options">
-      <ul>
-        <li>Database</li>
-        <li>Education</li>
-        <li>News</li>
-        <li>Regulation</li>
-      </ul>
-      <button class="primary-button"><span>Hoax Buster</span></button>
-    </div>
-  </nav>
-  <main>
-    <section class="schedule-section">
-      <div class="left-section">
-        <h1>Fight Virus With Vaccines</h1>
-        <p>Let's stop this pandemic by killing the virus with a vaccine, don't let yourself and your family get infected</p>
-        <div class="features-left">
-          <div class="features yellow-feature">
-            <figure>
-              <i class="fa-solid fa-square-check"></i>
-            </figure>
-            <p>Best protection</p>
-          </div>
-          <div class="features yellow-feature">
-            <figure>
-              <i class="fa-solid fa-star"></i>
-            </figure>
-            <p>Selected Vaccines</p>
-          </div>
+    <nav class="nav" id="nvar">
+        <div class="brand">
+            <h3>Consultas clinicas</h3>
         </div>
-        <div class="schedule">
-          <div class="features">
-            <figure class="icon-shadow">
-              <i class="fa-solid fa-clock"></i>
-            </figure>
-            <p>Schedule your vaccinations</p>
-          </div>
-          <div class="schedule-date">
-            <div class="features schedule-features">
-              <figure>
-                <i class="fa-solid fa-location-dot"></i>
-              </figure>
-              <div>
-                <p>Location</p>
-                <p>Jakarta Utara</p>
-              </div>
+
+        <div class="navigation">
+            <ul class="menu">
+                <li><a href="./Home.html">Inicio</a></li>
+            </ul>
+            <div class="user">
+                <button class="search-button"><i class="fa fa-user"></i></button>
             </div>
-            <div class="features schedule-features">
-              <figure>
-                <i class="fa-solid fa-calendar-days"></i>
-              </figure>
-              <div>
-                <p>Date</p>
-                <p>08 July 2021</p>
-              </div>
-            </div>
-            <div class="features schedule-features">
-              <figure>
-                <i class="fa-solid fa-syringe"></i>
-              </figure>
-              <div>
-                <p>Vaccine Type</p>
-                <p>Moderna</p>
-              </div>
-            </div>
-            <button class="primary-button submit"><span>Submit</span></button>
-          </div>
         </div>
-      </div>
-      <figure class="right-section">
-        <img src="./imagenes/doc-1.png" alt="doc-image">
-      </figure>
-    </section>
-    <section class="logo-section">
-      <figure>
-        <img src="https://www.mbot.com/wp-content/uploads/2021/02/astrazeneca-PNG-logo.png" alt="astrazeneca">
-      </figure>
-      <figure>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Sinovac_logo.svg/2560px-Sinovac_logo.svg.png" alt="sinovac">
-      </figure>
-      <figure>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Pfizer_%282021%29.svg/2560px-Pfizer_%282021%29.svg.png" alt="pfizer">
-      </figure>
-      <figure>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Moderna_logo.svg/1200px-Moderna_logo.svg.png" alt="moderna">
-      </figure>
-    </section>
-    <section class="info-section">
-      <div class="info-text">
-        <h1>Why should I vaccine?</h1>
-        <p>In order to avoid any doubts about getting the COVID-19 vaccine, identify the following 4 benefits of COVID-19 vaccination :</p>
-      </div>
-      <div class="info-cards">
-        <div class="info-card features">
-          <figure>
-            <i class="fa-solid fa-sliders"></i>
-          </figure>
-          <h2>Minimize the spread of viruses</h2>
-          <p>Vaccine has been proven affective to prevent someone from getting infected with Coronavirus</p>
+    </nav>
+    <form>
+        <h1 class="tittle" style="padding-bottom: 40px">Sintomas</h1>
+        <label>*Required</label><br/>
+        <div class="form_div">
+            <label for="nombre"><b>Nombre</b></label><br/>
+            <input class="controls" type="text" id="nombre" name="nombre" placeholder="Nombre(s)" aria-label="Apellido"/>
+            <input class="controls" type="text" id="apellido" name="apellido" placeholder="Apellidos"/>
         </div>
-        <div class="info-card features icon-shadow"">
-          <figure class="icon-shadow">
-            <i class="fa-solid fa-square-check"></i>
-          </figure>
-          <h2>Forming antibodies</h2>
-          <p>COVID-19 vaccine proven to help shape antibody response for immune system</p>
+        <div class="form_div">
+            <label for="Numero de Telefono"><b>Numero de Telefono<span style="color: red;">*</span></b></label><br/>
+            <input class="controls" type="text" name="telefono" id="telefono">
         </div>
-        <div class="info-card features">
-          <figure>
-            <i class="fa-solid fa-users"></i>
-          </figure>
-          <h2>Protecting people nearby</h2>
-          <p>The benefits of COVID-19 vaccination are the vaccine that we get can also help protect people around us</p>
+        <div class="form_div">
+            <label for="Direccion"><b>Direccion<span style="color: red;">*</span></b></label><br/>
+            <input class="controls" type="text" name="direccion" id="calle1" placeholder="Calle 1">
+            <input class="controls" type="text" name="direccion" id="calle2" placeholder="Calle 2">
+            <input class="controls" type="text" name="direccion" id="cuidad" placeholder="Cuidad">
+            <input class="controls" type="text" name="direccion" id="estado" placeholder="Estado">
+            <input class="controls" type="text" name="direccion" id="cp" placeholder="Codigo Postal">
+
+
+
+
         </div>
-        <div class="info-card features">
-          <figure>
-            <i class="fa-solid fa-chart-line"></i>
-          </figure>
-          <h2>Creating group immunity</h2>
-          <p>COVID-19 vaccination is also beneficiat for creating group immunity or herd immunity </p>
+        <div class="form_div">
+            <label for="nombre"><b>Genero<span style="color: red;">*</span></b></label><br/>
+            <input type="radio" id="femenino" name="genero" value="f">
+            <label for="femenino">Femenino</label><br/>
+            <input type="radio" id="masculino" name="genero" value="m">
+            <label for="masculino">Masculino</label><br/>
         </div>
-      </div>
-    </section>
-    <section class="recomendation-section">
-      <figure class="background-fig">
-        <img src="./imagenes/doc-2.png" alt="doc-image">
-      </figure>
-      <div class="right-recommendation">
-        <div class="info-text">
-          <h1>Preparations Before Vaccine</h1>
-          <p>The success of vaccines is strongly influenced by the strength of the body's immune system. Therefore, there are several things that can be tried to make the COVID-19 vaccine work:</p>
+        <div class="form_div"> 
+            <label>Edad</label><br/>
+            <input type="radio" name="edad" id="0a9">
+            <label><b>0-9 años de edad</b></label><br/>
+            <input type="radio" name="edad" id="10a19">
+            <label><b>10-19 años de edad</b></label><br/>
+            <input type="radio" name="edad" id="20a29">
+            <label><b>20-29 años de edad</b></label><br/>
+            <input type="radio" name="edad" id="30a39">
+            <label><b>30-39 años de edad</b></label><br/>
+            <input type="radio" name="edad" id="40a49">
+            <label><b>40-49 años de edad</b></label><br/>
+            <input type="radio" name="edad" id="50a59">
+            <label><b>50-59 años de edad</b></label><br/>
+            <input type="radio" name="edad" id="60a69">
+            <label><b>60-69 años de edad</b></label><br/>
+            <input type="radio" name="edad" id="70a79">
+            <label><b>70-79 años de edad</b></label><br/>
+            <input type="radio" name="edad" id="80">
+            <label><b>80 o mayor</b></label><br/>
         </div>
-        <div class="preparation-item">
-          <div class="features preparation-features">
-            <figure>
-              <i class="fa-solid fa-shield-blank"></i>
-            </figure>
-            <p>Avoid alcoholic beverages</p>
-            <figure>
-              <i class="fa-solid fa-caret-down"></i>
-            </figure>
-          </div>
-          <div class="features preparation-features">
-            <figure class="icon-shadow">
-              <i class="fa-solid fa-square-xmark"></i>
-            </figure>
-            <p>Avoid stress</p>
-            <figure>
-              <i class="fa-solid fa-caret-up"></i>
-            </figure>
-            <p>Stress has a profound effect on immune work. Moreover, prolonged stress can increase cortisol production and oxidate stress in the body</p>
-          </div>
-          <div class="features preparation-features">
-            <figure>
-              <i class="fa-solid fa-chart-column"></i>
-            </figure>
-            <p>Eat healty food</p>
-            <figure>
-              <i class="fa-solid fa-caret-down"></i>
-            </figure>
-          </div>
-          <div class="features preparation-features">
-            <figure>
-              <i class="fa-solid fa-circle-check"></i>
-            </figure>
-            <p>Get enough slepp</p>
-            <figure>
-              <i class="fa-solid fa-caret-down"></i>
-            </figure>
-          </div>
-          <div class="features preparation-features">
-            <figure>
-              <i class="fa-solid fa-heart"></i>
-            </figure>
-            <p>Exercise of physical activity</p>
-            <figure>
-              <i class="fa-solid fa-caret-down"></i>
-            </figure>
-          </div>
+        <div class="form_div">
+            <label>¿Tiene alguna condición preexistente como enfermedad cardiaca, diabetes, 
+                hipertensión o enfermedad pulmonar?<span style="color: red">*</span>
+            </label><br/>
+            <input type="radio" name="enfermedad" id="1">
+            <label><b>Si</b></label><br/>
+            <input type="radio" name="enfermedad" id="1">
+            <label><b>No</b></label><br/>
         </div>
-      </div>
-    </section>
-    <section class="contact-section">
-      <div class="right-section">
-        <div class="info-text">
-          <h1>Emergency Contact</h1>
-          <p>Contact one of the contacts below if you or your family feel unwell and have similar symptoms such as Covid-19, make sure you also take care of yourself before reporting to us :</p>
+        <div class="form_div">
+            <label>¿Tiene un sistema inmunitario debilitado debido a una enfermedad 
+                o medicamento?<span style="color: red">*</span>
+            </label><br/>
+            <input type="radio" name="enfermedad" id="1">
+            <label><b>Si</b></label><br/>
+            <input type="radio" name="enfermedad" id="1">
+            <label><b>No</b></label><br/>
         </div>
-        <div class="contact-card-container">
-          <div class="contact-card">
-            <div class="features contact-features">
-              <figure>
-                <i class="fa-solid fa-phone"></i>
-              </figure>
-              <div class="contact-text">
-                <p>Call</p>
-                <p>021.123.145.14</p>
-              </div>
-            </div>
-            <button class="secundary-button">Call Now</button>
-          </div>
-          <div class="contact-card">
-            <div class="features contact-features">
-              <figure class="icon-shadow">
-                <i class="fa-solid fa-comment-dots"></i>
-              </figure>
-              <div class="contact-text">
-                <p>Chat</p>
-                <p>021.123.145.14</p>
-              </div>
-            </div>
-            <button class="primary-button"><span>Chat Now</span></button>
-          </div>
-          <div class="contact-card">
-            <div class="features contact-features">
-              <figure>
-                <i class="fa-solid fa-video"></i>
-              </figure>
-              <div class="contact-text">
-                <p>Video Call</p>
-                <p>021.123.145.14</p>
-              </div>
-            </div>
-            <button class="secundary-button">Video Call Now</button>
-          </div>
-          <div class="contact-card">
-            <div class="features contact-features">
-              <figure>
-                <i class="fa-solid fa-envelope"></i>
-              </figure>
-              <div class="contact-text">
-                <p>Message</p>
-                <p>021.123.145.14</p>
-              </div>
-            </div>
-            <button class="secundary-button">Message Now</button>
-          </div>
+        <div class="form_div">
+            <label>¿Es alergico de algun medicamento?<span style="color: red">*</span>
+            </label><br/>
+            <input type="radio" name="enfermedad" id="1">
+            <label><b>Si</b></label><br/>
+            <input type="radio" name="enfermedad" id="1">
+            <label><b>No</b></label><br/>
         </div>
-      </div>
-      <figure class="background-fig">
-        <img src="./imagenes/doc-3.png" alt="">
-      </figure>
-    </section>
-  </main>
-  <footer>
-    <div class="left-footer">
-      <h2>Vaccination</h2>
-      <p>Our goal is to help the world free from the ongoing pandemic</p>
-    </div>
-    <div class="right-footer">
-      <ul>
-        <li>About</li>
-        <li>About us</li>
-        <li>Features</li>
-        <li>News & Blog</li>
-      </ul>
-      <ul>
-        <li>Company</li>
-        <li>How We Work</li>
-        <li>Capital</li>
-        <li>Security</li>
-      </ul>
-      <ul>
-        <li>Support</li>
-        <li>FAQs</li>
-        <li>Support Center</li>
-        <li>Contact us</li>
-      </ul>
-    </div>
-    <p>@2021 Vaccination. All rights reserved</p>
-    <div>
-      <p>Terms & Agreements</p>
-      <p>Privacy Policy</p>
-    </div>
-  </footer>
+        <div class="form_div">
+            <label for="Medic"><b>Si puso "Si", por favor menciona cual o cuales son:</b></label><br/>
+            <input class="controls" type="text" name="medic" id="medic">
+        <div class="form_div">
+            <label>¿Cuáles son todos sus sintomas?<span style="color: red">*</span></label><br/>
+            <label><input type="checkbox" name="fiebre"><b>Fiebre (arriba de los 37°C)</b></label><br/>
+            <label><input type="checkbox" name="tos"><b>Tos</b></label><br/>
+            <label><input type="checkbox" name="respirar"><b>Dificultad para respirar</b></label><br/>
+            <label><input type="checkbox" name="cabeza"><b>Dolor de cabeza</b></label><br/>
+            <label><input type="checkbox" name="escalofrios"><b>Escalofríos</b></label><br/>
+            <label><input type="checkbox" name="dolores"><b>Dolores corporales (dolor en articulaciones, dolores musculares)</b></label><br/>
+            <label><input type="checkbox" name="flujo"><b>Flujo nasal</b></label><br/>
+            <label><input type="checkbox" name="garganta"><b>Dolor de garganta</b></label><br/>
+            <label><input type="checkbox" name="nauses"><b>Nauseas</b></label><br/>
+            <label><input type="checkbox" name="vomito"><b>Vómito</b></label><br/>
+            <label><input type="checkbox" name="diarrea"><b>Diarrea</b></label><br/>
+            <label style="font-size: 10px">Marque todo lo que corresponda</label>
+        </div>
+        <div class="form_div">
+            <label>¿Cuándo empezaron los sintomas?<span style="color: red">*</span></label><br/>
+            <input type="date" name="fecha" id="fecha">
+        </div>
+        <div class="div-buttom">
+            <input class="boton-submit" type="submit" value="Enviar">
+        </div>
+    </form>
 </body>
 </html>

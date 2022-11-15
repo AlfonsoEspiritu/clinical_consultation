@@ -1,6 +1,8 @@
 body{
-    background-repeat: no-repeat;
+	
+	background-repeat: no-repeat;
 	background-size: cover;
+
 }
 
 .form-style{
@@ -17,8 +19,13 @@ body{
 	background-color: #ebebeb;
 }
 
-.form-control{
-	margin-bottom: 2px;
+.sideline{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #ccc;
 }
 
 button{
@@ -72,3 +79,4 @@ button{
 	background: url("https: //cathydutton.co.uk/images/tech/gulp.jpg") left center no-repeat #fff;
 	background-size: contain;
 }
+

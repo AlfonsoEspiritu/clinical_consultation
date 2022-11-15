@@ -12,9 +12,9 @@
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
    <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link rel="stylesheet" type="text/css" href="./CSS/stylesheet.css"> 
-   <link rel="stylesheet" type="text/css" href="CSS/Style2.css">
-   <script src="./JAVASCRIP/main.js"></script>
+   <link rel="stylesheet" type="text/css" href="../Home/CSS/stylesheet.css"> 
+   <link rel="stylesheet" type="text/css" href="../Home/CSS/Style2.css">
+   <script src="../Home/JAVASCRIP/main.js"></script>
 </head>
 <body>
     <nav class="nav" id="nvar">
@@ -24,11 +24,19 @@
 
         <div class="navigation">
             <ul class="menu">
-                <li><a href="#">Pasientes</a></li>
-                <li><a href="#">Consultas</a></li>
+                <li><a href="#">Pacientes</a></li>
+                <li><a href="./index.html">Consultas</a></li>
             </ul>
             <div class="user">
-                <button class="search-button"><i class="fa fa-user"></i></button>
+              <button class="search-button"><i class="fa fa-user" onClick="redirect()">
+              </i></button>
+              <script type="text/javascript">
+                  function redirect()
+                  {
+                 
+                  window.location.href="Login.html";
+                  }
+                  </script>
             </div>
         </div>
     </nav>
@@ -107,7 +115,7 @@
             </div>
           </div>
           <figure class="right-section">
-            <img src="./imagenes/doc-1.png" alt="doc-image">
+            <img src="../Home/imagenes/doc-1.png" alt="doc-image">
           </figure>
         </section>
         <section class="logo-section">
@@ -229,7 +237,7 @@
             </div>
           </div>
           <figure class="background-fig">
-            <img src="./imagenes/doc-3.png" alt="">
+            <img src="../Home/imagenes/doc-3.png" alt="">
           </figure>
         </section>
       </main>

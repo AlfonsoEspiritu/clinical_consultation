@@ -1,6 +1,8 @@
 body{
-    background-repeat: no-repeat;
+	
+	background-repeat: no-repeat;
 	background-size: cover;
+
 }
 
 .form-style{
@@ -14,11 +16,16 @@ body{
 	border-bottom: 1px solid #007bff;
 	box-shadow: none;
 	outline: 0;
-	background-color: #ebebeb;
+	background-color: #ffffff;
 }
 
-.form-control{
-	margin-bottom: 2px;
+.sideline{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #ccc;
 }
 
 button{
@@ -61,6 +68,10 @@ button{
 	transform: rotateY(0deg);
 }
 
+.inicio a{
+width: 100%;
+text-decoration: none;	
+}
 
 /*Icons*/
 .correct[data-item="sass"], .flipped[data-item="sass"]{
@@ -72,3 +83,4 @@ button{
 	background: url("https: //cathydutton.co.uk/images/tech/gulp.jpg") left center no-repeat #fff;
 	background-size: contain;
 }
+
