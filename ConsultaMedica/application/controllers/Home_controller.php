@@ -8,12 +8,12 @@ class home_controller extends CI_Controller {
 		$this->load->helper('url'); //carga el helper de funciones para extrar rutas
 		$this->load->library('form_validation'); //Libreria de validacion de formularios
 		
-		$this->load->database();
-		$this->load->model('clinica_model');
-		$this->load->library('session');
+		$this->load->database();//Carga la base de datos
+		$this->load->model('clinica_model');//Se carga el respectivo modelo, con el cual tiene comunicacion 
+		$this->load->library('session');//Carga la sesion
 	}
 
-	public function index()
+	public function index() //Si existe una sesion carga el home / no redirecciona al otro controlador
 	{
 		if($this->session->has_userdata('nombre')){
 			$this->load->view('layout/homecabecera');
@@ -26,22 +26,22 @@ class home_controller extends CI_Controller {
 	}
 
 	public function muestradatos()
-	{
+	{		//Si no encuentra una sesion redirecciona al controlador de login
 		if(! $this->session->has_userdata('nombre')){
             redirect('login_controller');
         }
-		
+		    //Si encuentra una sesion le asigana la informacion del get_formularios a la variable formularios
 		$datos1['formularios'] = $this->clinica_model->get_formularios();
-		
+		    //Carga la vista de los datos del arreglo formulario
 		$this->load->view('datitos',$datos1);
 	
 	}
-	
+			//Si no encuentra sesion iniciada reedirecciona 
 	public function formulario()
 	{
 		if(! $this->session->has_userdata('nombre')){
             redirect('login_controller');
-        }
+        }	//Si encuentra carga la vista form
 		$this->load->view('form');
 	}
 	
@@ -49,7 +49,7 @@ class home_controller extends CI_Controller {
 	{
 		$this->load->view('login');
 	}*/
-	
+	 //Carga la vista a registrarse
 	public function registrarse()
 	{
 		$this->load->view('singUp');

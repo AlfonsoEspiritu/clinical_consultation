@@ -75,17 +75,17 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'clinica',
+	'hostname' => 'localhost',//Local host (Es que la esta hosteando)
+	'username' => 'root',//Usuario de la BD
+	'password' => '',//No se aplico en este caso
+	'database' => 'clinica',//Nombre de la BD 
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
 	'cache_on' => FALSE,
 	'cachedir' => '',
-	'char_set' => 'utf8',
+	'char_set' => 'utf8',//Son para adaptarse a sus distinto tipo de lenguas
 	'dbcollat' => 'utf8_general_ci',
 	'swap_pre' => '',
 	'encrypt' => FALSE,
