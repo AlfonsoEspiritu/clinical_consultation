@@ -13,3 +13,6 @@ class Login_model extends CI_Model {
 	}
 
 }
+
+//Model: comunica con el back-end, controller y la BD
+//controller: se comunica con el modelo para comunicarse con la BD y con el Front-end 

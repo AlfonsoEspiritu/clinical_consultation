@@ -21,8 +21,7 @@ class home_controller extends CI_Controller {
 			$this->load->view('layout/homepie');
 		}else{
 			redirect('login_controller');
-		}
-		
+		}		
 	}
 
 	public function muestradatos()
